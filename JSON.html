@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        
+        var actor1 ={name: "kamal",age:69};
+        var actor2 ={age:69,name: "kamal"};
+        console.log(JSON.stringify(actor1))==(JSON.stringify(actor2));
+
+        var actor3 ={ name: "suriya",age:69};
+        var actor4 ={ name: "str",age:69};
+        console.log(JSON.stringify(actor3))==(JSON.stringify(actor4));
+
+
+        var actor5 ={ name: "kamal",age:69};
+        var actor6 ={ name: "kamal",age:69};
+        console.log(JSON.stringify(actor5))==(JSON.stringify(actor6));
+
+        var actor7 ={ name: "suriya",age:48};
+        var actor8 ={ age:69,name: "suriya"};
+        console.log(JSON.stringify(actor7))==(JSON.stringify(actor8));
+
+
+    </script>
+    
+</body>
+</html>
